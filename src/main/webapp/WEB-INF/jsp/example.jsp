@@ -1,6 +1,6 @@
 <%-- 
-    Document   : index
-    Created on : 30.12.2015, 23:46:53
+    Document   : example
+    Created on : 03.01.2016, 23:46:16
     Author     : Alexey
 --%>
 
@@ -12,7 +12,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Проверяем</h1>
-        <a href ="http://localhost:8080/Informer/test.htm">Перейти на тестову страницу </a>
+        <h1>Тестовая страница!!!!</h1>
     </body>
 </html>
