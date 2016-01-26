@@ -12,6 +12,7 @@
             <props>
                 <prop key="index.htm">indexController</prop>
                 <prop key="test.htm">TestController</prop>
+                <prop key="menu.htm">menuController</prop>
             </props>
         </property>
     </bean>
@@ -22,6 +23,9 @@
     
     <bean name="TestController"
           class="com.controller.TestController" />
+    
+    <bean name ="menuController"
+          class="com.controller.menuController"/>
     
    <bean id="viewResolver"
           class="org.springframework.web.servlet.view.InternalResourceViewResolver"

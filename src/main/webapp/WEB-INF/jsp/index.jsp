@@ -11,8 +11,15 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
+    <frameset cols="100,*">
+        <frame src="menu.htm" name="menu">
+            
+    </frameset>
+        
+    <!--
     <body>
         <h1>Проверяем</h1>
         <a href ="http://localhost:8080/Informer/test.htm">Перейти на тестову страницу </a>
     </body>
+    -->
 </html>
