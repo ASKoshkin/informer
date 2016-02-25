@@ -18,7 +18,7 @@ public class menuController implements Controller {
     @Override
     public ModelAndView handleRequest(HttpServletRequest hsr, HttpServletResponse hsr1) throws Exception {
         ModelAndView mv;
-        mv = new ModelAndView();
+        mv = new ModelAndView();        
         mv.setViewName("menu");       
         return mv;
     }
