@@ -34,11 +34,22 @@
     <bean name ="menuController"
           class="com.controller.menuController"/>
     
+    <!--
     <bean id="viewResolver"
           class="org.springframework.web.servlet.view.InternalResourceViewResolver"
           p:prefix="/WEB-INF/jsp/"
           p:suffix=".jsp" />
-   
+   -->
+   <!-- Configure Apache Tiles for the view -->
+    <bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+        <property name="definitions" value="/WEB-INF/tiles/tiles-templates.xml" />
+        <property name="preparerFactoryClass" value="org.springframework.web.servlet.view.tiles3.SpringBeanPreparerFactory"/>
+    </bean>
+
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.tiles3.TilesViewResolver">
+        <property name="viewClass" value="org.springframework.web.servlet.view.tiles3.TilesView"/>
+    </bean>
+    
     <mvc:resources mapping="/resources/**" location="/resources/" />
     <mvc:annotation-driven />
 </beans>

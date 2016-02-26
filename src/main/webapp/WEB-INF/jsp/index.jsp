@@ -20,7 +20,10 @@
         <a href ="http://localhost:8080/Informer/test.htm">Перейти на тестову страницу </a>
         -->
         <div id="head"> Шапка сайта </div>
-        <div id="left-column"> Левая колонка </div>
+        <div id="left-column"> Левая колонка 
+            
+        </div>
+        
         <div id="right-column"> Правая колонка </div>
         <div id="center-column"> Центральная колонка </div>
         <div id="footer"> Подвал сайта </div>
