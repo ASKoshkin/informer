@@ -1,17 +1,13 @@
-<%-- 
-    Document   : menu
-    Created on : 26.01.2016, 21:59:43
-    Author     : Alexey
---%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<ul style="list-style:none;line-height:28px;">
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Навигация по сайту</title>
-    </head>
-    <body style="background: #F3E2A9">
-        <p>МЕНЮ</p>
-    </body>
-</html>
+	<li><spring:url value="/index.htm" var="homeUrl" htmlEscape="true" />
+		<a href="${homeUrl}">Home</a>
+	</li>
+
+	<li><spring:url value="/viewPeson.htm" var="personListUrl" htmlEscape="true" />
+		<a href="${personListUrl}">Person List</a>
+	</li>
+
+</ul>
+
