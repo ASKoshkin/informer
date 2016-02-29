@@ -11,5 +11,9 @@
 	<definition name="personList" extends="DefaultTemplate">
 	    <put-attribute name="body"	value="/WEB-INF/jsp/personList.jsp" />
 	</definition>
+        
+        <definition name="test" extends="DefaultTemplate">
+	    <put-attribute name="body" value="/WEB-INF/jsp/admin/test.jsp" role = "ROLE_ANONYMOUS" />
+	</definition>
 	
 </tiles-definitions>

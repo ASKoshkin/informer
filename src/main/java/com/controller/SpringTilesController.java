@@ -15,20 +15,19 @@ import org.springframework.web.servlet.ModelAndView;
  */
 @Controller
 public class SpringTilesController {
-    
-    
-    
+        
     @RequestMapping(value="/index")
     public String index() {
-        
-        System.out.println("Enter index!!!!!!!!!!!!!!!!!!!!");
-        
         return "index";
     }
     
     @RequestMapping(value="/viewPeson")
-    public ModelAndView viewPersons(Model model) {        
-         System.out.println("Enter viewPeson!!!!!!!!!!!!!!!!!!!!");
+    public ModelAndView viewPersons(Model model) {                 
         return new ModelAndView("personList");
+    }
+    
+    @RequestMapping(value="/test")
+    public ModelAndView viewTest(Model model) {                 
+        return new ModelAndView("test");
     }
 }

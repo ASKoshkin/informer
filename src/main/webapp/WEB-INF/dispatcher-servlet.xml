@@ -26,8 +26,6 @@
                            http://www.springframework.org/schema/context 
                            http://www.springframework.org/schema/context/spring-context.xsd">
 
-    -->
-    <!--
     <bean class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping"/>
     
     <bean id="urlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
@@ -45,9 +43,7 @@
     
     <bean name="TestController"
           class="com.controller.TestController" />
-    
-    
-    
+   
     <bean id="viewResolver"
           class="org.springframework.web.servlet.view.InternalResourceViewResolver"
           p:prefix="/WEB-INF/jsp/"
@@ -62,12 +58,11 @@
    
     <mvc:resources mapping="/resources/**" location="/resources/" />
     
-    
-    
      <!-- Configure Apache Tiles for the view -->
-    <bean id="viewResolver" class="org.springframework.web.servlet.view.tiles3.TilesViewResolver"/>
     
-    <bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.tiles3.TilesViewResolver"/> 
+    
+    <bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">        
         <property name="definitions">
             <list>
                 <value>/WEB-INF/layouts/layouts.xml</value>
