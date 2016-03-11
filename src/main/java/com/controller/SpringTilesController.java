@@ -4,6 +4,8 @@
  */
 package com.controller;
 
+import javax.servlet.http.HttpServletRequest;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,8 +28,16 @@ public class SpringTilesController {
         return new ModelAndView("personList");
     }
     
-    @RequestMapping(value="/test")
+    /*@RequestMapping(value="/test")
     public ModelAndView viewTest(Model model) {                 
         return new ModelAndView("test");
+    }
+    */
+    
+    @RequestMapping(value="/test")
+    public String viewTest (HttpServletRequest request,Model model){
+        System.out.println("getAuthType(): "+request.getAuthType());
+        System.out.println(SecurityContextHolder.getContext().getAuthentication().getPrincipal());
+        return "test";
     }
 }

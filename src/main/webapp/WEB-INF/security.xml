@@ -7,8 +7,10 @@
                         http://www.springframework.org/schema/security 
                         http://www.springframework.org/schema/security/spring-security-4.0.xsd">
 
-    <http auto-config='true' >
+    <http auto-config='true'
+          once-per-request="false">
         <!--<intercept-url pattern="/**" access="ROLE_USER" /> -->
+        <access-denied-handler error-page="/error409.jsp"/>
         <intercept-url pattern="/**" access="hasRole('ROLE_ANONYMOUS')" />
 	<intercept-url pattern="/admin/**" access="hasRole('ROLE_ADMIN')" />
         
