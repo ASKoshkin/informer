@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Spring MVC - Tiles Integration tutorial</title>
+	<title>Intranet - Информационный сайт</title>
 	<link rel="stylesheet" href="resources/screen.css" type="text/css" media="screen, projection"></link>
 	<link rel="stylesheet" href="resources/print.css" type="text/css" media="print"></link>
 	<!--[if IE]>
